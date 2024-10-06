@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header section */
+header {
+  padding: 20px;
+  background-color: #1e054a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-header {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid black;
+}
+.header-content {
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+}
+.header-icon {
+  width: 200px;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #d78bd7;
+  text-align: center;
+}
+.header-content p {
+  font-family: "PT Sans", system-ui;
+  color: rgb(227, 150, 173);
+  font-size: 30px;
+}
+.down-arrow {
+  color: rgb(249, 198, 247);
+  font-size: 30px;
+}
+
+/* navbar section */
+nav {
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 1px;
+  background-color: #1e054a;
+}
+.brand-icon {
+  width: 50px;
+}
+.brand-name-icon {
+  color: #f53eab;
+  font: bold 25px "Playfair Display", serif;
+}
+.navbar a {
+  color: #f53eab;
+  font: 20px "PT Sans", system-ui;
+}
+.active {
+  color: #f53eab !important;
+  border-bottom: 2px solid #f53eab;
+  font-weight: bold !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(245, 62, 171) !important;
+  border-bottom: 2px solid rgb(245, 62, 171);
+}
+
+/* collection section */
+#collection {
+  text-align: center;
+  background-color: #1e054a;
+}
+#collection h2,
+.card-holder h3,
+.card-holder p {
+  color: pink;
+  margin-bottom: 20px;
+}
+#collection h2 {
+  font: bold 40px "Playfair Display", serif;
+}
+.card-collection {
+  width: 90%;
+  margin: auto;
+  border: 2px solid rgb(102, 11, 159);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px lightblue;
+  display: flex;
+}
+
+.card-holder {
+  /* width: 250px; */
+  border: 1px solid pink;
+  background-color: rgb(49, 10, 82);
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px 1px lightpink;
+}
+.img-top {
+  max-width: 100%;
+  border: 1px solid black;
+}
+.card-holder h3 {
+  font-family: "Playfair Display", serif;
+}
+.price {
+  font-style: italic;
+  text-decoration: underline;
+}
+.card-btn {
+  font: 20px "PT Sans", system-ui;
+  border: 1px solid #1e054a;
+  color: #f53eab;
+  background-color: pink;
+  border-radius: 8px;
+}
+.card-paragraph {
+  position: absolute;
+  visibility: hidden;
+}
+.card-one {
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  left: 7%;
+}
+
+.card-two {
+  position: relative;
+  z-index: 2;
+  top: 10px;
+  left: 4%;
+}
+.card-three {
+  position: relative;
+  z-index: 10;
+  top: 20px;
+  right: 1%;
+}
+.card-four {
+  position: relative;
+  z-index: 5;
+  top: 10px;
+  right: 4%;
+}
+.card-five {
+  position: relative;
+  z-index: 3;
+  top: 0px;
+  right: 7%;
+}
+.card-holder:hover {
+  cursor: pointer;
+  position: relative;
+}
+.card-one:hover {
+  transform: translate(-50px, 0px);
+}
